@@ -18,4 +18,7 @@ fork the code and run index.html.
 
 ## screenshots of testcases
 
-1)
+1)![Screenshot_20240417_114328](https://github.com/spirit-bomb/tax_calculator/assets/136380969/b6dba4df-c60c-4bad-b3eb-43bf105042cd)
+2)![Screenshot_20240417_120435](https://github.com/spirit-bomb/tax_calculator/assets/136380969/e377bb91-60b2-4e88-a240-660cc69274db)
+3)![Screenshot_20240417_120534](https://github.com/spirit-bomb/tax_calculator/assets/136380969/fa97537c-ec13-4541-b310-5d0a1003e40c)
+4)![Screenshot_20240417_120645](https://github.com/spirit-bomb/tax_calculator/assets/136380969/edc69678-b54c-4082-a3b6-36fff5d2bb8f)
