@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+        <div class="enclose">
+            <form class="box">
+                <!-- 1 -->
+                <div class="fields">
+                    <div class="written">
+                        <p class="text">
+                            Enter gross annual income 
+                        </p>
+                        <div class="helper" id="helper1">
+                            <span id="helper-icon">?</span>
+                            <span id="info1" class="helper-text">
+                                Gross annual income is your total salary in year
+                                before any deductions
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-section">
+                        <input type="text" id="annual-income" class="input-field"
+                        placeholder="Enter gross annual income">
+                        <div class="tooltip" id="tooltip1">
+                            <span id="tooltip-icon">!</span>
+                            <span class="error-text" id="error1">Please enter numbers only</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="fields">
+                    <div class="written">
+                        <p class="text">
+                            Enter extra income 
+                        </p>
+                        <div class="helper" id="helper2">
+                            <span id="helper-icon">?</span>
+                            <span id="info2" class="helper-text">
+                                Extra income refers to any additional 
+                                income earned beyond your primary source of 
+                                income.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-section">
+                        <input type="text" id="extra-income" class="input-field"
+                        placeholder="Enter extra income ">
+                        <div class="tooltip" id="tooltip2">
+                            <span id="tooltip-icon">!</span>
+                            <span class="error-text" id="error2">Please enter numbers only</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="fields">
+                    <div class="written">
+                        <p class="text">
+                            Enter age group
+                        </p>
+                        <div class="helper" id="helper3">
+                            <span id="helper-icon">?</span>
+                            <span id="info3" class="helper-text">
+                                age group means in which range of age you belong to.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-section">
+                        <select id="age-grp" name="age-grp" class="input-field">
+                            <option value=""></option>
+                            <option value="less_40">&lt;40</option>
+                            <option value="bet_40_60">&gt;=40 & &lt;60</option>
+                            <option value="more_60">&gt;60</option>
+                        </select>
+                        <div class="tooltip" id="tooltip3">
+                            <span id="tooltip-icon">!</span>
+                            <span class="error-text" id="error3">This field is mandatory</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="fields">
+                    <div class="written">
+                        <p class="text">
+                            Enter total applicable deduction 
+                        </p>
+                        <div class="helper" id="helper4">
+                            <span id="helper-icon">?</span>
+                            <span id="info4" class="helper-text">
+                                it refers to
+                                the sum of all deductions that can be applied
+                                to reduce your taxable income.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="input-section" >
+                        <input type="text" id="deductions" class="input-field"
+                        placeholder="Enter total applicable deduction " >
+                        <div class="tooltip" id="tooltip4">
+                            <span id="tooltip-icon">!</span>
+                            <span class="error-text" id="error4">Please enter numbers only</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="button" id="calculate">Submit</button>
+                </div>
+            </form>
+            <div id="pop-up">
+                <div id="primary-text">
+                    <h1>
+                        Your overall income will be
+                    </h1>
+                    <span id="result">
+                        
+                    </span>
+                    <h3>
+                        after tax deductions
+                    </h3>
+                </div>
+                <div class="close-btn">
+                    <button type="button" id="res-close">
+                        close
+                    </button>
+                </div>
+            </div>
+        </div>
+    <script src="./script.js"></script>
+</body>
+</html>
