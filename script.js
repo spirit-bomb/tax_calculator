@@ -15,6 +15,7 @@ const isNumeric=(num)=>{
     return !isNaN(num);
 }
 
+//event handlers for input fields
 
 grs_income.addEventListener("input",()=>{
     if(!isNumeric(Number(grs_income.value))){
@@ -44,8 +45,8 @@ deduct.addEventListener("input",()=>{
 })
 
 
-submit.addEventListener("click",(e)=>{
-    e.preventDefault();
+submit.addEventListener("click",()=>{
+
 
     if(age_grp.value=="" || age_grp.value=="blank"){
         return tooltip3.style.visibility="visible";
@@ -59,9 +60,6 @@ submit.addEventListener("click",(e)=>{
     const ex=Number(ex_income.value);
     const ded=Number(deduct.value);
     const net_income=grs+ex-ded;
-    //console.log(isNumeric(grs));
-    //console.log(grs);
-    // console.log(age_grp.value);
     let tax=0;
     if(net_income<=800000){
         console.log("no-tax");
