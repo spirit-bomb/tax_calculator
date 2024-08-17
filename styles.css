@@ -90,10 +90,10 @@ form button:enabled{
 }
 
 .tooltip{
-    border:2px solid black;
+    border:1px solid black;
     border-radius:100%;
     align-content: center;
-    height:40%;
+    height:45%;
     position:absolute;
     right:30px;
     padding:1px;
@@ -240,7 +240,7 @@ form button:enabled{
     border:1px solid rgb(168, 167, 167);
     border-radius:100%;
     align-content: center;
-    height:80%;
+    height:100%;
     position:absolute;
     right:20px;
     cursor:pointer;
@@ -249,7 +249,7 @@ form button:enabled{
 }
 
 #helper1{
-    transform:translateX(-600%)
+    transform:translateX(-600%);
 }
 
 #helper2{
@@ -297,6 +297,7 @@ form button:enabled{
 #helper-icon{
     padding:4px;
     font-size: smaller;
+    
 }
 
 .helper-text{
